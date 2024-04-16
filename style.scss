@@ -1,0 +1,2060 @@
+$basecolor: #141414;
+$yellow: #FFA901;
+$white: #ffffff;
+$gray: #808080;
+$gold:#D4AF37;
+$black:#000000;
+$voilet:#B3ADFF;
+
+hr {
+    height: 1px;
+    background-color: $gray;
+}
+
+header {
+    background-color: $basecolor;
+    color: $white;
+    font-size: 16px;
+
+    .rotate-zoom {
+        transition: transform 0.9s, transform-origin 0.5s, filter 0.5s;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-color: $yellow;
+        color: $white;
+
+        img {
+            content: url(./assets/whiteicon.svg);
+            transform: rotate(360deg) scale(1.5);
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+        }
+    }
+}
+
+.mainnav {
+    background-color: $black;
+
+    .navbar {
+        transition: background-color 0.3s;
+
+        button {
+            border: 2px solid $gold;
+            background-color: transparent;
+            color: $yellow;
+            border-radius: 10px;
+        }
+
+        .nav-link {
+            color: $gray;
+            transition: color .8s;
+
+            img {
+                margin-left: 5px;
+            }
+
+            &:hover,
+            &:focus {
+                color: $yellow;
+
+                & img {
+                    display: none;
+                }
+
+                &::after {
+                    content: url(./assets/yellowdownarrow.svg);
+                    display: inline-block;
+                    margin-left: 5px; // Adjust as needed
+                }
+            }
+
+            &.active,
+            &:active {
+                color: $yellow;
+            }
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.gif {
+    background-image: url(./assets/ai.gif);
+    height: 100vh;
+    // width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .text2 {
+        .first {
+            color: $white;
+            font-size: 18px;
+            width: 600px;
+            text-align: center;
+        }
+
+        .second {
+            margin-bottom: 30px;
+
+            a {
+                color: $yellow;
+                text-decoration: none;
+
+                img {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.firstfooter {
+    .footer {
+        background-image: url(./assets/grid.svg);
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $black;
+
+        .text1 {
+            margin: 0;
+            padding: 0;
+
+            p {
+                font-size: 16px;
+                color: white;
+                padding-top: 46px;
+                padding-left: 170px;
+            }
+        }
+
+        .text2 {
+            margin: 0;
+            padding: 0;
+
+            p {
+                font-size: 46px;
+                color: $yellow;
+                padding-left: 170px;
+            }
+        }
+    }
+}
+
+.futuretechblog {
+    background-color: $black;
+
+    .heading {
+        .logo {
+            top: 30px;
+        }
+
+        .main {
+            border-right: 1px solid $gray;
+            width: 400px;
+            height: 300px;
+            // padding-top: 150px;
+
+            .first {
+                font-size: 30px;
+                color: $white;
+            }
+
+            .second {
+                font-size: 16px;
+                color: $gray;
+
+            }
+        }
+
+    }
+
+    .fourbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        .onebox,
+        .secbox,
+        .thirdbox,
+        .fourthbox {
+            width: 520px;
+            height: 125px;
+            border: 1px solid $gray;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.17);
+            backdrop-filter: blur(1px);
+        }
+
+        .onebox {
+            overflow: hidden;
+            cursor: pointer;
+
+            .bg1 {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                display: none;
+            }
+
+            .bg2 {
+                position: absolute;
+                bottom: 0px;
+                display: none;
+            }
+
+            .left {
+                z-index: 1;
+                height: 85px;
+                width: 85px;
+                margin: 22px;
+                border-radius: 10px;
+                background-color: $gray;
+            }
+
+            .right {
+                height: 85px;
+                width: 350px;
+                z-index: 1;
+
+                .up {
+                    color: $gray;
+                    font-size: 20px;
+                }
+
+                .down {
+
+                    color: $gray;
+                    font-size: 16px;
+                }
+            }
+
+            &:hover {
+                background-color: $yellow;
+
+                .bg1 {
+                    display: flex;
+                }
+
+                .bg2 {
+                    display: flex;
+                }
+
+                .left {
+                    background-color: $black;
+
+                    .rocket img {
+                        // Change the src attribute of the image directly
+                        content: url(./assets/yellowrocket.svg);
+                    }
+                }
+
+                .right {
+                    .up {
+                        color: $black;
+                    }
+
+                    .down {
+                        color: $black;
+                    }
+                }
+            }
+        }
+
+        .secbox {
+            overflow: hidden;
+            cursor: pointer;
+
+            .bg1 {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                display: none;
+            }
+
+            .bg2 {
+                position: absolute;
+                bottom: 0px;
+                display: none;
+            }
+
+            .left {
+                z-index: 1;
+                height: 85px;
+                width: 85px;
+                margin: 22px;
+                border-radius: 10px;
+                background-color: $gray;
+            }
+
+            .right {
+                height: 85px;
+                width: 350px;
+                z-index: 1;
+
+                .up {
+                    color: $gray;
+                    font-size: 20px;
+                }
+
+                .down {
+
+                    color: $gray;
+                    font-size: 16px;
+                }
+            }
+
+            &:hover {
+                background-color: $yellow;
+
+                .bg1 {
+                    display: flex;
+                }
+
+                .bg2 {
+                    display: flex;
+                }
+
+                .left {
+                    background-color: $black;
+
+                    .rocket img {
+                        // Change the src attribute of the image directly
+                        content: url(./assets/yellowNetwork.svg);
+                    }
+                }
+
+                .right {
+                    .up {
+                        color: $black;
+                    }
+
+                    .down {
+                        color: $black;
+                    }
+                }
+            }
+        }
+
+        .thirdbox {
+            overflow: hidden;
+            cursor: pointer;
+
+            .bg1 {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                display: none;
+            }
+
+            .bg2 {
+                position: absolute;
+                bottom: 0px;
+                display: none;
+            }
+
+            .left {
+                z-index: 1;
+                height: 85px;
+                width: 85px;
+                margin: 22px;
+                border-radius: 10px;
+                background-color: $gray;
+            }
+
+            .right {
+                height: 85px;
+                width: 350px;
+                z-index: 1;
+
+                .up {
+                    color: $gray;
+                    font-size: 20px;
+                }
+
+                .down {
+
+                    color: $gray;
+                    font-size: 16px;
+                }
+            }
+
+            &:hover {
+                background-color: $yellow;
+
+                .bg1 {
+                    display: flex;
+                }
+
+                .bg2 {
+                    display: flex;
+                }
+
+                .left {
+                    background-color: $black;
+
+                    .rocket img {
+                        // Change the src attribute of the image directly
+                        content: url(./assets/yellowtruck.svg);
+                    }
+                }
+
+                .right {
+                    .up {
+                        color: $black;
+                    }
+
+                    .down {
+                        color: $black;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .fourthbox {
+        overflow: hidden;
+        cursor: pointer;
+
+        .bg1 {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            display: none;
+        }
+
+        .bg2 {
+            position: absolute;
+            bottom: 0px;
+            display: none;
+        }
+
+        .left {
+            z-index: 1;
+            height: 85px;
+            width: 85px;
+            margin: 22px;
+            border-radius: 10px;
+            background-color: $gray;
+        }
+
+        .right {
+            height: 85px;
+            width: 350px;
+            z-index: 1;
+
+            .up {
+                color: $gray;
+                font-size: 20px;
+            }
+
+            .down {
+
+                color: $gray;
+                font-size: 16px;
+            }
+        }
+
+        &:hover {
+            background-color: $yellow;
+
+            .bg1 {
+                display: flex;
+            }
+
+            .bg2 {
+                display: flex;
+            }
+
+            .left {
+                background-color: $black;
+
+                .rocket img {
+                    // Change the src attribute of the image directly
+                    content: url(./assets/yellowheadphone.svg);
+                }
+            }
+
+            .right {
+                .up {
+                    color: $black;
+                }
+
+                .down {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+.secondfutureBlog {
+    background-color: $black;
+
+    .fourbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 1100px;
+
+        .onebox,
+        .secbox,
+        .thirdbox,
+        .fourthbox {
+            width: 520px;
+            height: 125px;
+            border: 1px solid $gray;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.17);
+            backdrop-filter: blur(1px);
+            margin-right: 20px;
+        }
+
+        .onebox {
+            overflow: hidden;
+            cursor: pointer;
+
+            .bg1 {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                display: none;
+            }
+
+            .bg2 {
+                position: absolute;
+                bottom: 0px;
+                display: none;
+            }
+
+            .left {
+                z-index: 1;
+                height: 85px;
+                width: 85px;
+                margin: 22px;
+                border-radius: 10px;
+                background-color: $gray;
+            }
+
+            .right {
+                height: 85px;
+                width: 350px;
+                z-index: 1;
+
+                .up {
+                    color: $gray;
+                    font-size: 20px;
+                }
+
+                .down {
+
+                    color: $gray;
+                    font-size: 16px;
+                }
+            }
+
+            &:hover {
+                background-color: $yellow;
+
+                .bg1 {
+                    display: flex;
+                }
+
+                .bg2 {
+                    display: flex;
+                }
+
+                .left {
+                    background-color: $black;
+
+                    .rocket img {
+                        // Change the src attribute of the image directly
+                        content: url(./assets/yellowrocket.svg);
+                    }
+                }
+
+                .right {
+                    .up {
+                        color: $black;
+                    }
+
+                    .down {
+                        color: $black;
+                    }
+                }
+            }
+        }
+
+        .secbox {
+            overflow: hidden;
+            cursor: pointer;
+
+            .bg1 {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                display: none;
+            }
+
+            .bg2 {
+                position: absolute;
+                bottom: 0px;
+                display: none;
+            }
+
+            .left {
+                z-index: 1;
+                height: 85px;
+                width: 85px;
+                margin: 22px;
+                border-radius: 10px;
+                background-color: $gray;
+            }
+
+            .right {
+                height: 85px;
+                width: 350px;
+                z-index: 1;
+
+                .up {
+                    color: $gray;
+                    font-size: 20px;
+                }
+
+                .down {
+
+                    color: $gray;
+                    font-size: 16px;
+                }
+            }
+
+            &:hover {
+                background-color: $yellow;
+
+                .bg1 {
+                    display: flex;
+                }
+
+                .bg2 {
+                    display: flex;
+                }
+
+                .left {
+                    background-color: $black;
+
+                    .rocket img {
+                        // Change the src attribute of the image directly
+                        content: url(./assets/yellowNetwork.svg);
+                    }
+                }
+
+                .right {
+                    .up {
+                        color: $black;
+                    }
+
+                    .down {
+                        color: $black;
+                    }
+                }
+            }
+        }
+
+        .thirdbox {
+            overflow: hidden;
+            cursor: pointer;
+
+            .bg1 {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                display: none;
+            }
+
+            .bg2 {
+                position: absolute;
+                bottom: 0px;
+                display: none;
+            }
+
+            .left {
+                z-index: 1;
+                height: 85px;
+                width: 85px;
+                margin: 22px;
+                border-radius: 10px;
+                background-color: $gray;
+            }
+
+            .right {
+                height: 85px;
+                width: 350px;
+                z-index: 1;
+
+                .up {
+                    color: $gray;
+                    font-size: 20px;
+                }
+
+                .down {
+
+                    color: $gray;
+                    font-size: 16px;
+                }
+            }
+
+            &:hover {
+                background-color: $yellow;
+
+                .bg1 {
+                    display: flex;
+                }
+
+                .bg2 {
+                    display: flex;
+                }
+
+                .left {
+                    background-color: $black;
+
+                    .rocket img {
+                        // Change the src attribute of the image directly
+                        content: url(./assets/yellowtruck.svg);
+                    }
+                }
+
+                .right {
+                    .up {
+                        color: $black;
+                    }
+
+                    .down {
+                        color: $black;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .fourthbox {
+        overflow: hidden;
+        cursor: pointer;
+
+        .bg1 {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            display: none;
+        }
+
+        .bg2 {
+            position: absolute;
+            bottom: 0px;
+            display: none;
+        }
+
+        .left {
+            z-index: 1;
+            height: 85px;
+            width: 85px;
+            margin: 22px;
+            border-radius: 10px;
+            background-color: $gray;
+        }
+
+        .right {
+            height: 85px;
+            width: 350px;
+            z-index: 1;
+
+            .up {
+                color: $gray;
+                font-size: 20px;
+            }
+
+            .down {
+
+                color: $gray;
+                font-size: 16px;
+            }
+        }
+
+        &:hover {
+            background-color: $yellow;
+
+            .bg1 {
+                display: flex;
+            }
+
+            .bg2 {
+                display: flex;
+            }
+
+            .left {
+                background-color: $black;
+
+                .rocket img {
+                    // Change the src attribute of the image directly
+                    content: url(./assets/yellowheadphone.svg);
+                }
+            }
+
+            .right {
+                .up {
+                    color: $black;
+                }
+
+                .down {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .heading {
+
+        .logo {
+            padding-left: 20px;
+            top: 80px;
+        }
+
+        .main {
+            padding-left: 20px;
+            border-left: 1px solid $gray;
+            width: 370px;
+            height: 300px;
+
+            .first {
+                font-size: 30px;
+                color: $white;
+            }
+
+            .second {
+                font-size: 16px;
+                color: $gray;
+
+            }
+        }
+
+    }
+}
+
+.choose {
+    background-image: url(./assets/choose.png);
+    height: 580px;
+
+    .content {
+        padding-top: 70px;
+        padding-left: 175px;
+
+        .heading {
+            font-size: 30px;
+            color: $white;
+            width: 260px;
+        }
+
+        .subheading {
+            font-size: 44px;
+            color: $yellow;
+            width: 775px;
+            border-left: 5px solid $yellow;
+            padding-left: 20px;
+        }
+
+        .detail {
+            font-size: 20px;
+            color: $white;
+            width: 795px;
+            height: 90px;
+        }
+
+        .ticks {
+            font-size: 20px;
+            width: 795px;
+            height: 120px;
+
+            .first {
+                color: $yellow;
+            }
+
+            .second,
+            .third {
+                color: $white;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.mission {
+
+    .content {
+        background-image: url(./assets/robot.png);
+        height: 555px;
+        background-color: $black;
+
+        .right {
+            margin-right: 40px;
+            width: 680px;
+            padding-top: 70px;
+
+            .heading {
+                h3 {
+                    color: $white;
+                    font-size: 30px;
+                }
+            }
+
+            .subheading {
+                h3 {
+                    color: $yellow;
+                    font-size: 44px;
+                }
+            }
+
+            .data {
+                p {
+                    color: $white;
+                    font-size: 20px;
+                }
+            }
+
+            .percent {
+                color: $gray;
+                padding-top: 20px;
+
+                .first {
+                    &:hover {
+                        h2 {
+                            color: $yellow;
+                        }
+
+                        h3 {
+                            color: $white;
+                        }
+
+                    }
+                }
+
+                .second {
+                    &:hover {
+                        h2 {
+                            color: $yellow;
+                        }
+
+                        h3 {
+                            color: $white;
+                        }
+
+                    }
+                }
+
+                .third {
+                    &:hover {
+                        h2 {
+                            color: $yellow;
+                        }
+
+                        h3 {
+                            color: $white;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.pricing {
+    background-image: url(./assets/pricing.svg);
+    height: 801px;
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .heading {
+        h1 {
+            font-size: 44px;
+            color: $yellow;
+        }
+    }
+
+    .main {
+        height: 530px;
+        width: 1300px;
+
+        .first {
+            width: 460px;
+
+            h2 {
+                font-size: 44px;
+                color: $yellow;
+            }
+
+            p {
+                color: $white;
+                font-size: 20px;
+            }
+        }
+
+        .second {
+            width: 280px;
+            padding-right: 14px;
+            border-right: 1px solid $gray;
+
+            .heading {
+                color: $gray;
+                font-size: 30px;
+            }
+
+            .data {
+                font-size: 17px;
+                color: $gray;
+            }
+
+            .button {
+                height: 40px;
+                cursor: pointer;
+                width: 230px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $gray;
+                border: 1px solid $black;
+                border-radius: 10px;
+                padding-top: 5px;
+
+                h2 {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    background-color: #ffa400;
+                    color: $black;
+                }
+            }
+
+            .money {
+                color: $gray;
+                font-size: 30px;
+            }
+
+            .included {
+                width: 250px;
+
+                h2 {
+                    color: $gray;
+                    font-size: 14px;
+                }
+
+                .options {
+                    font-size: 16px;
+                    color: $gray;
+                    height: 30px;
+                }
+            }
+
+            &:hover {
+                .heading h2 {
+                    color: $yellow;
+                }
+
+                .button {
+                    background-color: $yellow;
+                }
+
+                .money h4 {
+                    color: $yellow;
+                }
+
+                .included h2 {
+                    color: $voilet;
+                }
+
+                .options {
+                    .one {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .two {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .three {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .four {
+                        img {
+                            content: url(./assets/greycross.svg);
+                        }
+                    }
+
+                    .five {
+                        img {
+                            content: url(./assets/greycross.svg);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .third {
+            width: 280px;
+            padding-right: 14px;
+            border-right: 1px solid $gray;
+
+            .heading {
+                color: $gray;
+                font-size: 30px;
+            }
+
+            .data {
+                font-size: 17px;
+                color: $gray;
+            }
+
+            .button {
+                height: 40px;
+                width: 230px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $gray;
+                border: 1px solid $black;
+                border-radius: 10px;
+                padding-top: 5px;
+                cursor: pointer;
+
+                h2 {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    background-color: #ffa400;
+                    color: $black;
+                }
+            }
+
+            .money {
+
+                h3 {
+                    font-size: 20px;
+                    text-decoration: line-through;
+                    color: $gray;
+                    padding-right: 10px;
+                }
+
+                h2 {
+                    padding-right: 10px;
+                    font-size: 30px;
+                    color: $gray;
+                }
+
+                h4 {
+                    font-size: 17px;
+                    color: $gray;
+                }
+            }
+
+            .included {
+                width: 250px;
+
+                h2 {
+                    color: $gray;
+                    font-size: 14px;
+                }
+
+                .options {
+                    font-size: 16px;
+                    color: $gray;
+                    height: 30px;
+                }
+            }
+
+            &:hover {
+                .heading h2 {
+                    color: $yellow;
+                }
+
+                .button {
+                    background-color: $yellow;
+
+                    h2 {
+                        color: $black;
+                    }
+                }
+
+                .money h3,
+                h2 {
+                    color: $yellow;
+                }
+
+                .included h2 {
+                    color: $voilet;
+                }
+
+                .options {
+                    .one {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .two {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .three {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .four {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .five {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .fourth {
+            width: 280px;
+            padding-right: 14px;
+            // border-right: 1px solid $gray;
+
+            .heading {
+                color: $gray;
+                font-size: 24px; // Decreased font size for better appearance
+                margin-bottom: 10px; // Added margin bottom for spacing
+            }
+
+            .data {
+                font-size: 16px; // Decreased font size for better appearance
+                color: $gray;
+                margin-bottom: 10px; // Added margin bottom for spacing
+            }
+
+            .button {
+                height: 40px;
+                width: 230px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $gray;
+                border: 1px solid $black;
+                border-radius: 10px;
+                padding-top: 5px;
+                cursor: pointer;
+
+                h2 {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    background-color: #ffa400;
+                    color: $black;
+                }
+            }
+
+            .money {
+                margin-top: 10px; // Added margin top for spacing
+
+                h3 {
+                    font-size: 18px; // Decreased font size for better appearance
+                    text-decoration: line-through;
+                    color: $gray;
+                    padding-right: 10px;
+                    margin: 0; // Reset margin for better appearance
+                }
+
+                h2 {
+                    font-size: 24px; // Decreased font size for better appearance
+                    color: $gray;
+                    margin: 0; // Reset margin for better appearance
+                }
+
+                h4 {
+                    font-size: 16px; // Decreased font size for better appearance
+                    color: $gray;
+                    margin: 0; // Reset margin for better appearance
+                }
+            }
+
+            .included {
+                // margin-top: 10px; // Added margin top for spacing
+                width: 250px;
+                height: 210px;
+
+                h2 {
+                    color: $gray;
+                    font-size: 14px;
+                    margin-bottom: 5px; // Added margin bottom for spacing
+                }
+
+                hr {
+                    color: $gray;
+                }
+
+                .options {
+                    font-size: 14px; // Decreased font size for better appearance
+                    color: $gray;
+                    margin-bottom: 5px; // Added margin bottom for spacing
+
+                    .one,
+                    .two,
+                    .three,
+                    .four,
+                    .five {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .heading h2 {
+                    color: $yellow;
+                }
+
+                .button {
+                    background-color: $yellow;
+                }
+
+                .money h4 {
+                    color: $yellow;
+                }
+
+                .included h2 {
+                    color: $voilet;
+                }
+
+                .options {
+                    .one {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .two {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .three {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .four {
+                        img {
+                            content: url(./assets/greencheck.svg);
+                        }
+                    }
+
+                    .five {
+                        img {
+                            content: url(./assets/greycross.svg);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.services {
+    height: 300px;
+    text-align: center;
+    background-color: $black;
+
+    .up {
+        font-size: 60px;
+        color: $yellow;
+        text-shadow: 2px 5px 0px $white;
+    }
+
+    .down {
+        color: $white;
+        font-size: 25px;
+    }
+}
+
+.serviceContent {
+    height: 700px;
+    background-color: $black;
+
+    .boxes {
+        // background-color: #322f2f;
+        height: 650px;
+        flex-wrap: wrap;
+
+        .one,
+        .two,
+        .three,
+        .four,
+        .five,
+        .six,
+        .seven,
+        .eight {
+            width: 324px;
+            height: 320px;
+        }
+
+        .one {
+            text-align: center;
+
+            .data {
+                .down {
+                    color: #805C18;
+                    font-size: 25px;
+                    padding-top: 30px;
+                }
+            }
+
+            &:hover {
+                background-image: url(./assets/servicebg.svg);
+
+                .data {
+                    .up {
+                        img {
+                            filter: drop-shadow(0 0.7rem 0.95rem $white);
+                            content: url(./assets/whiterobotservice.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .two {
+            text-align: center;
+            border-bottom: 1px solid $yellow;
+            // border-right: 1px solid $yellow;
+            // border-left: 1px solid $yellow;
+
+            .data {
+
+                .down {
+                    color: #805C18;
+                    // padding-top: 10px;
+                    font-size: 25px;
+                }
+            }
+
+            &:hover {
+                background-image: url(./assets/serv.svg);
+
+                .data {
+                    .up {
+                        img {
+                            filter: drop-shadow(0 0.7rem 0.95rem $white);
+                            content: url(./assets/whitenot.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .three {
+            text-align: center;
+            border-bottom: 1px solid $yellow;
+
+            .data {
+                .up {
+                    img {
+                        padding-bottom: 20px;
+                    }
+                }
+
+                .down {
+                    color: #805C18;
+                    padding-top: 10px;
+                    font-size: 25px;
+                }
+            }
+
+            &:hover {
+                background-image: url(./assets/serv.svg);
+
+                .data {
+                    .up {
+                        img {
+                            filter: drop-shadow(0 0.7rem 0.95rem $white);
+                            content: url(./assets/whitefinanec.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .four {
+            text-align: center;
+
+            .data {
+                .down {
+                    color: #805C18;
+                    padding-top: 10px;
+                    font-size: 25px;
+                }
+            }
+
+            &:hover {
+                background-image: url(./assets/serv.svg);
+
+                .data {
+                    .up {
+                        img {
+                            filter: drop-shadow(0 0.7rem 0.95rem $white);
+                            content: url(./assets/whitesocial.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .five {
+            text-align: center;
+
+            .data {
+                .down {
+                    color: #805C18;
+                    padding-top: 10px;
+                    font-size: 25px;
+                }
+            }
+
+            &:hover {
+                background-image: url(./assets/serv.svg);
+
+                .data {
+                    .up {
+                        img {
+                            filter: drop-shadow(0 0.7rem 0.95rem $white);
+                            content: url(./assets/whitesearch.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .six {
+            text-align: center;
+
+            .data {
+                .down {
+                    color: #805C18;
+                    padding-top: 10px;
+                    font-size: 25px;
+                }
+            }
+
+            &:hover {
+                background-image: url(./assets/serv.svg);
+
+                .data {
+                    .up {
+                        img {
+                            filter: drop-shadow(0 0.7rem 0.95rem $white);
+                            content: url(./assets/whitenetwork.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .seven {
+            text-align: center;
+
+            .data {
+                .down {
+                    color: #805C18;
+                    padding-top: 10px;
+                    font-size: 25px;
+                }
+            }
+
+            &:hover {
+                background-image: url(./assets/serv.svg);
+
+                .data {
+                    .up {
+                        img {
+                            filter: drop-shadow(0 0.7rem 0.95rem $white);
+                            content: url(./assets/whiteui.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .eight {
+            text-align: center;
+
+            .data {
+                .down {
+                    color: #805C18;
+                    padding-top: 10px;
+                    font-size: 25px;
+                }
+            }
+
+            &:hover {
+                background-image: url(./assets/serv.svg);
+
+                .data {
+                    .up {
+                        img {
+                            filter: drop-shadow(0 0.7rem 0.95rem $white);
+                            content: url(./assets/whiteglobe.svg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.free {
+    background-color: $black;
+    background-image: url(./assets/freebg.svg);
+    height: 500px;
+
+    .content {
+        width: 740px;
+        height: 220px;
+        text-align: center;
+
+        .top {
+            color: $yellow;
+            font-size: 66px;
+            filter: drop-shadow(0 0 0.65rem $white);
+        }
+
+        .mid {
+            font-size: 26px;
+            color: $white;
+        }
+
+        .bottom {
+            cursor: pointer;
+
+            .left {
+                font-size: 20px;
+                width: 270px;
+                height: 75px;
+                background-color: #6a4700;
+                color: D98F00;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: #FFA800;
+                    color: $white;
+                }
+            }
+
+            .right {
+                width: 270px;
+                height: 75px;
+                background-color: #6a4700;
+                color: D98F00;
+                border-radius: 10px;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: #FFA800;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $black;
+    height: 800px;
+    overflow: hidden;
+
+    .footerContent {
+        .left {
+            h2 {
+                color: $white;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: white;
+                font-size: 69px;
+                width: 670px;
+            }
+
+            h3 {
+                padding-top: 20px;
+                color: $white;
+                font-size: 26px;
+                width: 670px;
+            }
+        }
+
+        .right {
+            width: 800px;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .right>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .right>div:hover {
+            animation-play-state: paused;
+        }
+
+        .one,
+        .two,
+        .three,
+        .four {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+        .one {
+            animation-name: circleOne;
+
+            &:hover {
+                img {
+                    content: url(./assets/glowrobot.svg);
+                    background-image: url(./assets/glowconnect.svg);
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        .two {
+            animation-name: circleTwo;
+            // background-image: url(./assets/glowconnect.svg);
+
+            &:hover {
+                img {
+                    content: url(./assets/goggleGlow.svg);
+                    background-image: url(./assets/glowconnect.svg);
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        .three {
+            animation-name: circleThree;
+
+            // background-image: url(./assets/glowconnect.svg);
+            &:hover {
+                img {
+                    content: url(./assets/remote.svg);
+                    background-image: url(./assets/glowconnect.svg);
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        .four {
+            animation-name: circleFour;
+
+            // background-image: url(./assets/glowconnect.svg);
+            &:hover {
+                img {
+                    content: url(./assets/catglow.svg);
+                    background-image: url(./assets/glowconnect.svg);
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        .five {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            // background-image: url(./assets/glowconnect.svg);
+            cursor: pointer;
+
+            &:hover {
+                img {
+                    content: url(./assets/driveglow.svg);
+                    background-image: url(./assets/glowconnect.svg);
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        @keyframes circleOne {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg);
+            }
+        }
+
+        @keyframes circleTwo {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translateY(200px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg) translateY(200px) rotate(-360deg);
+            }
+        }
+
+        @keyframes circleThree {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translateX(-200px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg) translateX(-200px) rotate(-360deg);
+            }
+        }
+
+        @keyframes circleFour {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translateY(-200px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg) translateY(-200px) rotate(-360deg);
+            }
+        }
+    }
+}
+
+.form {
+    background-color: $black;
+
+    .formContent {
+        border: 4px dashed $gold;
+        height: 800px;
+        width: 1000px;
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+
+        .heading {
+            color: $yellow;
+            font-size: 60px;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                text-align: left;
+                font-weight: bolder;
+                font-size: 30px;
+                color: $yellow;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"] {
+                margin-bottom: 10px;
+                background-color: $black;
+                font-size: 22px;
+                border: 2px dashed $yellow;
+                padding: 10px;
+                color: $gray;
+            }
+
+            input[type="text"]:focus {
+                outline: none;
+                color: $gray;
+            }
+
+            p {
+                text-align: left;
+                font-size: 22px;
+                color: #666;
+            }
+        }
+
+        .email {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                text-align: left;
+                font-weight: bolder;
+                font-size: 30px;
+                color: $yellow;
+                margin-bottom: 5px;
+            }
+
+            input[type="email"] {
+                margin-bottom: 10px;
+                background-color: $black;
+                font-size: 22px;
+                border: 2px dashed $yellow;
+                padding: 10px;
+                color: $gray;
+            }
+
+            input[type="email"]:focus {
+                outline: none;
+                color: $gray;
+            }
+
+            p {
+                text-align: left;
+                font-size: 22px;
+                color: #666;
+            }
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                text-align: left;
+                font-weight: bolder;
+                font-size: 30px;
+                color: $yellow;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"] {
+                margin-bottom: 10px;
+                background-color: $black;
+                font-size: 22px;
+                border: 2px dashed $yellow;
+                padding: 10px;
+                color: $gray;
+            }
+
+            input[type="text"]:focus {
+                outline: none;
+                color: $gray;
+            }
+
+            p {
+                text-align: left;
+                font-size: 22px;
+                color: #666;
+            }
+
+        }
+
+        button {
+            font-size: 30px;
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: $gold;
+            border-radius: 20px;
+            font-weight: bolder;
+        }
+    }
+}
+
+.end {
+    background-color: $black;
+
+    .main {
+        height: 300px;
+
+        .left {
+            img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+
+        .right {
+            .right2 {
+                .one {
+                    margin-right: 50px;
+
+                    h1 {
+                        color: $white;
+                        font-size: 22px;
+                    }
+                }
+
+                .two {
+                    margin-right: 50px;
+
+                    h1 {
+                        color: $white;
+                        font-size: 22px;
+                    }
+                }
+
+                .three {
+
+                    h1 {
+                        color: $white;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

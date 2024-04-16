@@ -1,0 +1,1515 @@
+hr {
+  height: 1px;
+  background-color: #808080;
+}
+
+header {
+  background-color: #141414;
+  color: #ffffff;
+  font-size: 16px;
+}
+header .rotate-zoom {
+  transition: transform 0.9s, transform-origin 0.5s, filter 0.5s;
+}
+header img {
+  cursor: pointer;
+}
+header:hover {
+  background-color: #FFA901;
+  color: #ffffff;
+}
+header:hover img {
+  content: url(./assets/whiteicon.svg);
+  transform: rotate(360deg) scale(1.5);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.mainnav {
+  background-color: #000000;
+}
+.mainnav .navbar {
+  transition: background-color 0.3s;
+}
+.mainnav .navbar button {
+  border: 2px solid #D4AF37;
+  background-color: transparent;
+  color: #FFA901;
+  border-radius: 10px;
+}
+.mainnav .navbar .nav-link {
+  color: #808080;
+  transition: color 0.8s;
+}
+.mainnav .navbar .nav-link img {
+  margin-left: 5px;
+}
+.mainnav .navbar .nav-link:hover, .mainnav .navbar .nav-link:focus {
+  color: #FFA901;
+}
+.mainnav .navbar .nav-link:hover img, .mainnav .navbar .nav-link:focus img {
+  display: none;
+}
+.mainnav .navbar .nav-link:hover::after, .mainnav .navbar .nav-link:focus::after {
+  content: url(./assets/yellowdownarrow.svg);
+  display: inline-block;
+  margin-left: 5px;
+}
+.mainnav .navbar .nav-link.active, .mainnav .navbar .nav-link:active {
+  color: #FFA901;
+}
+.mainnav .navbar-nav .nav-item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.gif {
+  background-image: url(./assets/ai.gif);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gif .text2 .first {
+  color: #ffffff;
+  font-size: 18px;
+  width: 600px;
+  text-align: center;
+}
+.gif .text2 .second {
+  margin-bottom: 30px;
+}
+.gif .text2 .second a {
+  color: #FFA901;
+  text-decoration: none;
+}
+.gif .text2 .second a img {
+  margin-left: 5px;
+}
+
+.firstfooter .footer {
+  background-image: url(./assets/grid.svg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000000;
+}
+.firstfooter .footer .text1 {
+  margin: 0;
+  padding: 0;
+}
+.firstfooter .footer .text1 p {
+  font-size: 16px;
+  color: white;
+  padding-top: 46px;
+  padding-left: 170px;
+}
+.firstfooter .footer .text2 {
+  margin: 0;
+  padding: 0;
+}
+.firstfooter .footer .text2 p {
+  font-size: 46px;
+  color: #FFA901;
+  padding-left: 170px;
+}
+
+.futuretechblog {
+  background-color: #000000;
+}
+.futuretechblog .heading .logo {
+  top: 30px;
+}
+.futuretechblog .heading .main {
+  border-right: 1px solid #808080;
+  width: 400px;
+  height: 300px;
+}
+.futuretechblog .heading .main .first {
+  font-size: 30px;
+  color: #ffffff;
+}
+.futuretechblog .heading .main .second {
+  font-size: 16px;
+  color: #808080;
+}
+.futuretechblog .fourbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.futuretechblog .fourbox .onebox,
+.futuretechblog .fourbox .secbox,
+.futuretechblog .fourbox .thirdbox,
+.futuretechblog .fourbox .fourthbox {
+  width: 520px;
+  height: 125px;
+  border: 1px solid #808080;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.17);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.futuretechblog .fourbox .onebox {
+  overflow: hidden;
+  cursor: pointer;
+}
+.futuretechblog .fourbox .onebox .bg1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.futuretechblog .fourbox .onebox .bg2 {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.futuretechblog .fourbox .onebox .left {
+  z-index: 1;
+  height: 85px;
+  width: 85px;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+.futuretechblog .fourbox .onebox .right {
+  height: 85px;
+  width: 350px;
+  z-index: 1;
+}
+.futuretechblog .fourbox .onebox .right .up {
+  color: #808080;
+  font-size: 20px;
+}
+.futuretechblog .fourbox .onebox .right .down {
+  color: #808080;
+  font-size: 16px;
+}
+.futuretechblog .fourbox .onebox:hover {
+  background-color: #FFA901;
+}
+.futuretechblog .fourbox .onebox:hover .bg1 {
+  display: flex;
+}
+.futuretechblog .fourbox .onebox:hover .bg2 {
+  display: flex;
+}
+.futuretechblog .fourbox .onebox:hover .left {
+  background-color: #000000;
+}
+.futuretechblog .fourbox .onebox:hover .left .rocket img {
+  content: url(./assets/yellowrocket.svg);
+}
+.futuretechblog .fourbox .onebox:hover .right .up {
+  color: #000000;
+}
+.futuretechblog .fourbox .onebox:hover .right .down {
+  color: #000000;
+}
+.futuretechblog .fourbox .secbox {
+  overflow: hidden;
+  cursor: pointer;
+}
+.futuretechblog .fourbox .secbox .bg1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.futuretechblog .fourbox .secbox .bg2 {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.futuretechblog .fourbox .secbox .left {
+  z-index: 1;
+  height: 85px;
+  width: 85px;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+.futuretechblog .fourbox .secbox .right {
+  height: 85px;
+  width: 350px;
+  z-index: 1;
+}
+.futuretechblog .fourbox .secbox .right .up {
+  color: #808080;
+  font-size: 20px;
+}
+.futuretechblog .fourbox .secbox .right .down {
+  color: #808080;
+  font-size: 16px;
+}
+.futuretechblog .fourbox .secbox:hover {
+  background-color: #FFA901;
+}
+.futuretechblog .fourbox .secbox:hover .bg1 {
+  display: flex;
+}
+.futuretechblog .fourbox .secbox:hover .bg2 {
+  display: flex;
+}
+.futuretechblog .fourbox .secbox:hover .left {
+  background-color: #000000;
+}
+.futuretechblog .fourbox .secbox:hover .left .rocket img {
+  content: url(./assets/yellowNetwork.svg);
+}
+.futuretechblog .fourbox .secbox:hover .right .up {
+  color: #000000;
+}
+.futuretechblog .fourbox .secbox:hover .right .down {
+  color: #000000;
+}
+.futuretechblog .fourbox .thirdbox {
+  overflow: hidden;
+  cursor: pointer;
+}
+.futuretechblog .fourbox .thirdbox .bg1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.futuretechblog .fourbox .thirdbox .bg2 {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.futuretechblog .fourbox .thirdbox .left {
+  z-index: 1;
+  height: 85px;
+  width: 85px;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+.futuretechblog .fourbox .thirdbox .right {
+  height: 85px;
+  width: 350px;
+  z-index: 1;
+}
+.futuretechblog .fourbox .thirdbox .right .up {
+  color: #808080;
+  font-size: 20px;
+}
+.futuretechblog .fourbox .thirdbox .right .down {
+  color: #808080;
+  font-size: 16px;
+}
+.futuretechblog .fourbox .thirdbox:hover {
+  background-color: #FFA901;
+}
+.futuretechblog .fourbox .thirdbox:hover .bg1 {
+  display: flex;
+}
+.futuretechblog .fourbox .thirdbox:hover .bg2 {
+  display: flex;
+}
+.futuretechblog .fourbox .thirdbox:hover .left {
+  background-color: #000000;
+}
+.futuretechblog .fourbox .thirdbox:hover .left .rocket img {
+  content: url(./assets/yellowtruck.svg);
+}
+.futuretechblog .fourbox .thirdbox:hover .right .up {
+  color: #000000;
+}
+.futuretechblog .fourbox .thirdbox:hover .right .down {
+  color: #000000;
+}
+.futuretechblog .fourthbox {
+  overflow: hidden;
+  cursor: pointer;
+}
+.futuretechblog .fourthbox .bg1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.futuretechblog .fourthbox .bg2 {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.futuretechblog .fourthbox .left {
+  z-index: 1;
+  height: 85px;
+  width: 85px;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+.futuretechblog .fourthbox .right {
+  height: 85px;
+  width: 350px;
+  z-index: 1;
+}
+.futuretechblog .fourthbox .right .up {
+  color: #808080;
+  font-size: 20px;
+}
+.futuretechblog .fourthbox .right .down {
+  color: #808080;
+  font-size: 16px;
+}
+.futuretechblog .fourthbox:hover {
+  background-color: #FFA901;
+}
+.futuretechblog .fourthbox:hover .bg1 {
+  display: flex;
+}
+.futuretechblog .fourthbox:hover .bg2 {
+  display: flex;
+}
+.futuretechblog .fourthbox:hover .left {
+  background-color: #000000;
+}
+.futuretechblog .fourthbox:hover .left .rocket img {
+  content: url(./assets/yellowheadphone.svg);
+}
+.futuretechblog .fourthbox:hover .right .up {
+  color: #000000;
+}
+.futuretechblog .fourthbox:hover .right .down {
+  color: #000000;
+}
+
+.secondfutureBlog {
+  background-color: #000000;
+}
+.secondfutureBlog .fourbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 1100px;
+}
+.secondfutureBlog .fourbox .onebox,
+.secondfutureBlog .fourbox .secbox,
+.secondfutureBlog .fourbox .thirdbox,
+.secondfutureBlog .fourbox .fourthbox {
+  width: 520px;
+  height: 125px;
+  border: 1px solid #808080;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.17);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  margin-right: 20px;
+}
+.secondfutureBlog .fourbox .onebox {
+  overflow: hidden;
+  cursor: pointer;
+}
+.secondfutureBlog .fourbox .onebox .bg1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.secondfutureBlog .fourbox .onebox .bg2 {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.secondfutureBlog .fourbox .onebox .left {
+  z-index: 1;
+  height: 85px;
+  width: 85px;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+.secondfutureBlog .fourbox .onebox .right {
+  height: 85px;
+  width: 350px;
+  z-index: 1;
+}
+.secondfutureBlog .fourbox .onebox .right .up {
+  color: #808080;
+  font-size: 20px;
+}
+.secondfutureBlog .fourbox .onebox .right .down {
+  color: #808080;
+  font-size: 16px;
+}
+.secondfutureBlog .fourbox .onebox:hover {
+  background-color: #FFA901;
+}
+.secondfutureBlog .fourbox .onebox:hover .bg1 {
+  display: flex;
+}
+.secondfutureBlog .fourbox .onebox:hover .bg2 {
+  display: flex;
+}
+.secondfutureBlog .fourbox .onebox:hover .left {
+  background-color: #000000;
+}
+.secondfutureBlog .fourbox .onebox:hover .left .rocket img {
+  content: url(./assets/yellowrocket.svg);
+}
+.secondfutureBlog .fourbox .onebox:hover .right .up {
+  color: #000000;
+}
+.secondfutureBlog .fourbox .onebox:hover .right .down {
+  color: #000000;
+}
+.secondfutureBlog .fourbox .secbox {
+  overflow: hidden;
+  cursor: pointer;
+}
+.secondfutureBlog .fourbox .secbox .bg1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.secondfutureBlog .fourbox .secbox .bg2 {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.secondfutureBlog .fourbox .secbox .left {
+  z-index: 1;
+  height: 85px;
+  width: 85px;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+.secondfutureBlog .fourbox .secbox .right {
+  height: 85px;
+  width: 350px;
+  z-index: 1;
+}
+.secondfutureBlog .fourbox .secbox .right .up {
+  color: #808080;
+  font-size: 20px;
+}
+.secondfutureBlog .fourbox .secbox .right .down {
+  color: #808080;
+  font-size: 16px;
+}
+.secondfutureBlog .fourbox .secbox:hover {
+  background-color: #FFA901;
+}
+.secondfutureBlog .fourbox .secbox:hover .bg1 {
+  display: flex;
+}
+.secondfutureBlog .fourbox .secbox:hover .bg2 {
+  display: flex;
+}
+.secondfutureBlog .fourbox .secbox:hover .left {
+  background-color: #000000;
+}
+.secondfutureBlog .fourbox .secbox:hover .left .rocket img {
+  content: url(./assets/yellowNetwork.svg);
+}
+.secondfutureBlog .fourbox .secbox:hover .right .up {
+  color: #000000;
+}
+.secondfutureBlog .fourbox .secbox:hover .right .down {
+  color: #000000;
+}
+.secondfutureBlog .fourbox .thirdbox {
+  overflow: hidden;
+  cursor: pointer;
+}
+.secondfutureBlog .fourbox .thirdbox .bg1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.secondfutureBlog .fourbox .thirdbox .bg2 {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.secondfutureBlog .fourbox .thirdbox .left {
+  z-index: 1;
+  height: 85px;
+  width: 85px;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+.secondfutureBlog .fourbox .thirdbox .right {
+  height: 85px;
+  width: 350px;
+  z-index: 1;
+}
+.secondfutureBlog .fourbox .thirdbox .right .up {
+  color: #808080;
+  font-size: 20px;
+}
+.secondfutureBlog .fourbox .thirdbox .right .down {
+  color: #808080;
+  font-size: 16px;
+}
+.secondfutureBlog .fourbox .thirdbox:hover {
+  background-color: #FFA901;
+}
+.secondfutureBlog .fourbox .thirdbox:hover .bg1 {
+  display: flex;
+}
+.secondfutureBlog .fourbox .thirdbox:hover .bg2 {
+  display: flex;
+}
+.secondfutureBlog .fourbox .thirdbox:hover .left {
+  background-color: #000000;
+}
+.secondfutureBlog .fourbox .thirdbox:hover .left .rocket img {
+  content: url(./assets/yellowtruck.svg);
+}
+.secondfutureBlog .fourbox .thirdbox:hover .right .up {
+  color: #000000;
+}
+.secondfutureBlog .fourbox .thirdbox:hover .right .down {
+  color: #000000;
+}
+.secondfutureBlog .fourthbox {
+  overflow: hidden;
+  cursor: pointer;
+}
+.secondfutureBlog .fourthbox .bg1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.secondfutureBlog .fourthbox .bg2 {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.secondfutureBlog .fourthbox .left {
+  z-index: 1;
+  height: 85px;
+  width: 85px;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+.secondfutureBlog .fourthbox .right {
+  height: 85px;
+  width: 350px;
+  z-index: 1;
+}
+.secondfutureBlog .fourthbox .right .up {
+  color: #808080;
+  font-size: 20px;
+}
+.secondfutureBlog .fourthbox .right .down {
+  color: #808080;
+  font-size: 16px;
+}
+.secondfutureBlog .fourthbox:hover {
+  background-color: #FFA901;
+}
+.secondfutureBlog .fourthbox:hover .bg1 {
+  display: flex;
+}
+.secondfutureBlog .fourthbox:hover .bg2 {
+  display: flex;
+}
+.secondfutureBlog .fourthbox:hover .left {
+  background-color: #000000;
+}
+.secondfutureBlog .fourthbox:hover .left .rocket img {
+  content: url(./assets/yellowheadphone.svg);
+}
+.secondfutureBlog .fourthbox:hover .right .up {
+  color: #000000;
+}
+.secondfutureBlog .fourthbox:hover .right .down {
+  color: #000000;
+}
+.secondfutureBlog .heading .logo {
+  padding-left: 20px;
+  top: 80px;
+}
+.secondfutureBlog .heading .main {
+  padding-left: 20px;
+  border-left: 1px solid #808080;
+  width: 370px;
+  height: 300px;
+}
+.secondfutureBlog .heading .main .first {
+  font-size: 30px;
+  color: #ffffff;
+}
+.secondfutureBlog .heading .main .second {
+  font-size: 16px;
+  color: #808080;
+}
+
+.choose {
+  background-image: url(./assets/choose.png);
+  height: 580px;
+}
+.choose .content {
+  padding-top: 70px;
+  padding-left: 175px;
+}
+.choose .content .heading {
+  font-size: 30px;
+  color: #ffffff;
+  width: 260px;
+}
+.choose .content .subheading {
+  font-size: 44px;
+  color: #FFA901;
+  width: 775px;
+  border-left: 5px solid #FFA901;
+  padding-left: 20px;
+}
+.choose .content .detail {
+  font-size: 20px;
+  color: #ffffff;
+  width: 795px;
+  height: 90px;
+}
+.choose .content .ticks {
+  font-size: 20px;
+  width: 795px;
+  height: 120px;
+}
+.choose .content .ticks .first {
+  color: #FFA901;
+}
+.choose .content .ticks .second,
+.choose .content .ticks .third {
+  color: #ffffff;
+}
+.choose .content .ticks img {
+  margin-right: 10px;
+}
+
+.mission .content {
+  background-image: url(./assets/robot.png);
+  height: 555px;
+  background-color: #000000;
+}
+.mission .content .right {
+  margin-right: 40px;
+  width: 680px;
+  padding-top: 70px;
+}
+.mission .content .right .heading h3 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.mission .content .right .subheading h3 {
+  color: #FFA901;
+  font-size: 44px;
+}
+.mission .content .right .data p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.mission .content .right .percent {
+  color: #808080;
+  padding-top: 20px;
+}
+.mission .content .right .percent .first:hover h2 {
+  color: #FFA901;
+}
+.mission .content .right .percent .first:hover h3 {
+  color: #ffffff;
+}
+.mission .content .right .percent .second:hover h2 {
+  color: #FFA901;
+}
+.mission .content .right .percent .second:hover h3 {
+  color: #ffffff;
+}
+.mission .content .right .percent .third:hover h2 {
+  color: #FFA901;
+}
+.mission .content .right .percent .third:hover h3 {
+  color: #ffffff;
+}
+
+.pricing {
+  background-image: url(./assets/pricing.svg);
+  height: 801px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pricing .heading h1 {
+  font-size: 44px;
+  color: #FFA901;
+}
+.pricing .main {
+  height: 530px;
+  width: 1300px;
+}
+.pricing .main .first {
+  width: 460px;
+}
+.pricing .main .first h2 {
+  font-size: 44px;
+  color: #FFA901;
+}
+.pricing .main .first p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.pricing .main .second {
+  width: 280px;
+  padding-right: 14px;
+  border-right: 1px solid #808080;
+}
+.pricing .main .second .heading {
+  color: #808080;
+  font-size: 30px;
+}
+.pricing .main .second .data {
+  font-size: 17px;
+  color: #808080;
+}
+.pricing .main .second .button {
+  height: 40px;
+  cursor: pointer;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+.pricing .main .second .button h2 {
+  font-size: 14px;
+}
+.pricing .main .second .button:hover {
+  background-color: #ffa400;
+  color: #000000;
+}
+.pricing .main .second .money {
+  color: #808080;
+  font-size: 30px;
+}
+.pricing .main .second .included {
+  width: 250px;
+}
+.pricing .main .second .included h2 {
+  color: #808080;
+  font-size: 14px;
+}
+.pricing .main .second .included .options {
+  font-size: 16px;
+  color: #808080;
+  height: 30px;
+}
+.pricing .main .second:hover .heading h2 {
+  color: #FFA901;
+}
+.pricing .main .second:hover .button {
+  background-color: #FFA901;
+}
+.pricing .main .second:hover .money h4 {
+  color: #FFA901;
+}
+.pricing .main .second:hover .included h2 {
+  color: #B3ADFF;
+}
+.pricing .main .second:hover .options .one img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .second:hover .options .two img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .second:hover .options .three img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .second:hover .options .four img {
+  content: url(./assets/greycross.svg);
+}
+.pricing .main .second:hover .options .five img {
+  content: url(./assets/greycross.svg);
+}
+.pricing .main .third {
+  width: 280px;
+  padding-right: 14px;
+  border-right: 1px solid #808080;
+}
+.pricing .main .third .heading {
+  color: #808080;
+  font-size: 30px;
+}
+.pricing .main .third .data {
+  font-size: 17px;
+  color: #808080;
+}
+.pricing .main .third .button {
+  height: 40px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.pricing .main .third .button h2 {
+  font-size: 14px;
+}
+.pricing .main .third .button:hover {
+  background-color: #ffa400;
+  color: #000000;
+}
+.pricing .main .third .money h3 {
+  font-size: 20px;
+  text-decoration: line-through;
+  color: #808080;
+  padding-right: 10px;
+}
+.pricing .main .third .money h2 {
+  padding-right: 10px;
+  font-size: 30px;
+  color: #808080;
+}
+.pricing .main .third .money h4 {
+  font-size: 17px;
+  color: #808080;
+}
+.pricing .main .third .included {
+  width: 250px;
+}
+.pricing .main .third .included h2 {
+  color: #808080;
+  font-size: 14px;
+}
+.pricing .main .third .included .options {
+  font-size: 16px;
+  color: #808080;
+  height: 30px;
+}
+.pricing .main .third:hover .heading h2 {
+  color: #FFA901;
+}
+.pricing .main .third:hover .button {
+  background-color: #FFA901;
+}
+.pricing .main .third:hover .button h2 {
+  color: #000000;
+}
+.pricing .main .third:hover .money h3,
+.pricing .main .third:hover h2 {
+  color: #FFA901;
+}
+.pricing .main .third:hover .included h2 {
+  color: #B3ADFF;
+}
+.pricing .main .third:hover .options .one img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .third:hover .options .two img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .third:hover .options .three img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .third:hover .options .four img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .third:hover .options .five img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .fourth {
+  width: 280px;
+  padding-right: 14px;
+}
+.pricing .main .fourth .heading {
+  color: #808080;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.pricing .main .fourth .data {
+  font-size: 16px;
+  color: #808080;
+  margin-bottom: 10px;
+}
+.pricing .main .fourth .button {
+  height: 40px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.pricing .main .fourth .button h2 {
+  font-size: 14px;
+}
+.pricing .main .fourth .button:hover {
+  background-color: #ffa400;
+  color: #000000;
+}
+.pricing .main .fourth .money {
+  margin-top: 10px;
+}
+.pricing .main .fourth .money h3 {
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #808080;
+  padding-right: 10px;
+  margin: 0;
+}
+.pricing .main .fourth .money h2 {
+  font-size: 24px;
+  color: #808080;
+  margin: 0;
+}
+.pricing .main .fourth .money h4 {
+  font-size: 16px;
+  color: #808080;
+  margin: 0;
+}
+.pricing .main .fourth .included {
+  width: 250px;
+  height: 210px;
+}
+.pricing .main .fourth .included h2 {
+  color: #808080;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.pricing .main .fourth .included hr {
+  color: #808080;
+}
+.pricing .main .fourth .included .options {
+  font-size: 14px;
+  color: #808080;
+  margin-bottom: 5px;
+}
+.pricing .main .fourth .included .options .one,
+.pricing .main .fourth .included .options .two,
+.pricing .main .fourth .included .options .three,
+.pricing .main .fourth .included .options .four,
+.pricing .main .fourth .included .options .five {
+  display: flex;
+  align-items: center;
+}
+.pricing .main .fourth .included .options .one img,
+.pricing .main .fourth .included .options .two img,
+.pricing .main .fourth .included .options .three img,
+.pricing .main .fourth .included .options .four img,
+.pricing .main .fourth .included .options .five img {
+  margin-right: 5px;
+}
+.pricing .main .fourth:hover .heading h2 {
+  color: #FFA901;
+}
+.pricing .main .fourth:hover .button {
+  background-color: #FFA901;
+}
+.pricing .main .fourth:hover .money h4 {
+  color: #FFA901;
+}
+.pricing .main .fourth:hover .included h2 {
+  color: #B3ADFF;
+}
+.pricing .main .fourth:hover .options .one img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .fourth:hover .options .two img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .fourth:hover .options .three img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .fourth:hover .options .four img {
+  content: url(./assets/greencheck.svg);
+}
+.pricing .main .fourth:hover .options .five img {
+  content: url(./assets/greycross.svg);
+}
+
+.services {
+  height: 300px;
+  text-align: center;
+  background-color: #000000;
+}
+.services .up {
+  font-size: 60px;
+  color: #FFA901;
+  text-shadow: 2px 5px 0px #ffffff;
+}
+.services .down {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.serviceContent {
+  height: 700px;
+  background-color: #000000;
+}
+.serviceContent .boxes {
+  height: 650px;
+  flex-wrap: wrap;
+}
+.serviceContent .boxes .one,
+.serviceContent .boxes .two,
+.serviceContent .boxes .three,
+.serviceContent .boxes .four,
+.serviceContent .boxes .five,
+.serviceContent .boxes .six,
+.serviceContent .boxes .seven,
+.serviceContent .boxes .eight {
+  width: 324px;
+  height: 320px;
+}
+.serviceContent .boxes .one {
+  text-align: center;
+}
+.serviceContent .boxes .one .data .down {
+  color: #805C18;
+  font-size: 25px;
+  padding-top: 30px;
+}
+.serviceContent .boxes .one:hover {
+  background-image: url(./assets/servicebg.svg);
+}
+.serviceContent .boxes .one:hover .data .up img {
+  filter: drop-shadow(0 0.7rem 0.95rem #ffffff);
+  content: url(./assets/whiterobotservice.svg);
+}
+.serviceContent .boxes .two {
+  text-align: center;
+  border-bottom: 1px solid #FFA901;
+}
+.serviceContent .boxes .two .data .down {
+  color: #805C18;
+  font-size: 25px;
+}
+.serviceContent .boxes .two:hover {
+  background-image: url(./assets/serv.svg);
+}
+.serviceContent .boxes .two:hover .data .up img {
+  filter: drop-shadow(0 0.7rem 0.95rem #ffffff);
+  content: url(./assets/whitenot.svg);
+}
+.serviceContent .boxes .three {
+  text-align: center;
+  border-bottom: 1px solid #FFA901;
+}
+.serviceContent .boxes .three .data .up img {
+  padding-bottom: 20px;
+}
+.serviceContent .boxes .three .data .down {
+  color: #805C18;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.serviceContent .boxes .three:hover {
+  background-image: url(./assets/serv.svg);
+}
+.serviceContent .boxes .three:hover .data .up img {
+  filter: drop-shadow(0 0.7rem 0.95rem #ffffff);
+  content: url(./assets/whitefinanec.svg);
+}
+.serviceContent .boxes .four {
+  text-align: center;
+}
+.serviceContent .boxes .four .data .down {
+  color: #805C18;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.serviceContent .boxes .four:hover {
+  background-image: url(./assets/serv.svg);
+}
+.serviceContent .boxes .four:hover .data .up img {
+  filter: drop-shadow(0 0.7rem 0.95rem #ffffff);
+  content: url(./assets/whitesocial.svg);
+}
+.serviceContent .boxes .five {
+  text-align: center;
+}
+.serviceContent .boxes .five .data .down {
+  color: #805C18;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.serviceContent .boxes .five:hover {
+  background-image: url(./assets/serv.svg);
+}
+.serviceContent .boxes .five:hover .data .up img {
+  filter: drop-shadow(0 0.7rem 0.95rem #ffffff);
+  content: url(./assets/whitesearch.svg);
+}
+.serviceContent .boxes .six {
+  text-align: center;
+}
+.serviceContent .boxes .six .data .down {
+  color: #805C18;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.serviceContent .boxes .six:hover {
+  background-image: url(./assets/serv.svg);
+}
+.serviceContent .boxes .six:hover .data .up img {
+  filter: drop-shadow(0 0.7rem 0.95rem #ffffff);
+  content: url(./assets/whitenetwork.svg);
+}
+.serviceContent .boxes .seven {
+  text-align: center;
+}
+.serviceContent .boxes .seven .data .down {
+  color: #805C18;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.serviceContent .boxes .seven:hover {
+  background-image: url(./assets/serv.svg);
+}
+.serviceContent .boxes .seven:hover .data .up img {
+  filter: drop-shadow(0 0.7rem 0.95rem #ffffff);
+  content: url(./assets/whiteui.svg);
+}
+.serviceContent .boxes .eight {
+  text-align: center;
+}
+.serviceContent .boxes .eight .data .down {
+  color: #805C18;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.serviceContent .boxes .eight:hover {
+  background-image: url(./assets/serv.svg);
+}
+.serviceContent .boxes .eight:hover .data .up img {
+  filter: drop-shadow(0 0.7rem 0.95rem #ffffff);
+  content: url(./assets/whiteglobe.svg);
+}
+
+.free {
+  background-color: #000000;
+  background-image: url(./assets/freebg.svg);
+  height: 500px;
+}
+.free .content {
+  width: 740px;
+  height: 220px;
+  text-align: center;
+}
+.free .content .top {
+  color: #FFA901;
+  font-size: 66px;
+  filter: drop-shadow(0 0 0.65rem #ffffff);
+}
+.free .content .mid {
+  font-size: 26px;
+  color: #ffffff;
+}
+.free .content .bottom {
+  cursor: pointer;
+}
+.free .content .bottom .left {
+  font-size: 20px;
+  width: 270px;
+  height: 75px;
+  background-color: #6a4700;
+  color: D98F00;
+  border-radius: 10px;
+}
+.free .content .bottom .left:hover {
+  background-color: #FFA800;
+  color: #ffffff;
+}
+.free .content .bottom .right {
+  width: 270px;
+  height: 75px;
+  background-color: #6a4700;
+  color: D98F00;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.free .content .bottom .right:hover {
+  background-color: #FFA800;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #000000;
+  height: 800px;
+  overflow: hidden;
+}
+.footer .footerContent .left h2 {
+  color: #ffffff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  font-size: 69px;
+  width: 670px;
+}
+.footer .footerContent .left h3 {
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 26px;
+  width: 670px;
+}
+.footer .footerContent .right {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.footer .footerContent .right > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.footer .footerContent .right > div:hover {
+  animation-play-state: paused;
+}
+.footer .footerContent .one,
+.footer .footerContent .two,
+.footer .footerContent .three,
+.footer .footerContent .four {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.footer .footerContent .one {
+  animation-name: circleOne;
+}
+.footer .footerContent .one:hover img {
+  content: url(./assets/glowrobot.svg);
+  background-image: url(./assets/glowconnect.svg);
+  width: 200px;
+  height: 200px;
+}
+.footer .footerContent .two {
+  animation-name: circleTwo;
+}
+.footer .footerContent .two:hover img {
+  content: url(./assets/goggleGlow.svg);
+  background-image: url(./assets/glowconnect.svg);
+  width: 200px;
+  height: 200px;
+}
+.footer .footerContent .three {
+  animation-name: circleThree;
+}
+.footer .footerContent .three:hover img {
+  content: url(./assets/remote.svg);
+  background-image: url(./assets/glowconnect.svg);
+  width: 200px;
+  height: 200px;
+}
+.footer .footerContent .four {
+  animation-name: circleFour;
+}
+.footer .footerContent .four:hover img {
+  content: url(./assets/catglow.svg);
+  background-image: url(./assets/glowconnect.svg);
+  width: 200px;
+  height: 200px;
+}
+.footer .footerContent .five {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  cursor: pointer;
+}
+.footer .footerContent .five:hover img {
+  content: url(./assets/driveglow.svg);
+  background-image: url(./assets/glowconnect.svg);
+  width: 200px;
+  height: 200px;
+}
+@keyframes circleOne {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+@keyframes circleTwo {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(200px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(200px) rotate(-360deg);
+  }
+}
+@keyframes circleThree {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(-200px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(-200px) rotate(-360deg);
+  }
+}
+@keyframes circleFour {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-200px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-200px) rotate(-360deg);
+  }
+}
+
+.form {
+  background-color: #000000;
+}
+.form .formContent {
+  border: 4px dashed #D4AF37;
+  height: 800px;
+  width: 1000px;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.form .formContent .heading {
+  color: #FFA901;
+  font-size: 60px;
+}
+.form .formContent .name {
+  display: flex;
+  flex-direction: column;
+}
+.form .formContent .name label {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #FFA901;
+  margin-bottom: 5px;
+}
+.form .formContent .name input[type=text] {
+  margin-bottom: 10px;
+  background-color: #000000;
+  font-size: 22px;
+  border: 2px dashed #FFA901;
+  padding: 10px;
+  color: #808080;
+}
+.form .formContent .name input[type=text]:focus {
+  outline: none;
+  color: #808080;
+}
+.form .formContent .name p {
+  text-align: left;
+  font-size: 22px;
+  color: #666;
+}
+.form .formContent .email {
+  display: flex;
+  flex-direction: column;
+}
+.form .formContent .email label {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #FFA901;
+  margin-bottom: 5px;
+}
+.form .formContent .email input[type=email] {
+  margin-bottom: 10px;
+  background-color: #000000;
+  font-size: 22px;
+  border: 2px dashed #FFA901;
+  padding: 10px;
+  color: #808080;
+}
+.form .formContent .email input[type=email]:focus {
+  outline: none;
+  color: #808080;
+}
+.form .formContent .email p {
+  text-align: left;
+  font-size: 22px;
+  color: #666;
+}
+.form .formContent .message {
+  display: flex;
+  flex-direction: column;
+}
+.form .formContent .message label {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #FFA901;
+  margin-bottom: 5px;
+}
+.form .formContent .message input[type=text] {
+  margin-bottom: 10px;
+  background-color: #000000;
+  font-size: 22px;
+  border: 2px dashed #FFA901;
+  padding: 10px;
+  color: #808080;
+}
+.form .formContent .message input[type=text]:focus {
+  outline: none;
+  color: #808080;
+}
+.form .formContent .message p {
+  text-align: left;
+  font-size: 22px;
+  color: #666;
+}
+.form .formContent button {
+  font-size: 30px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #D4AF37;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+
+.end {
+  background-color: #000000;
+}
+.end .main {
+  height: 300px;
+}
+.end .main .left img {
+  height: 150px;
+  width: 150px;
+}
+.end .main .right .right2 .one {
+  margin-right: 50px;
+}
+.end .main .right .right2 .one h1 {
+  color: #ffffff;
+  font-size: 22px;
+}
+.end .main .right .right2 .two {
+  margin-right: 50px;
+}
+.end .main .right .right2 .two h1 {
+  color: #ffffff;
+  font-size: 22px;
+}
+.end .main .right .right2 .three h1 {
+  color: #ffffff;
+  font-size: 22px;
+}/*# sourceMappingURL=style.css.map */
